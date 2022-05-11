@@ -162,13 +162,14 @@ export const createCustomType = (
 						type: "Date!",
 						extensions: { dateformat: {} },
 					},
+					slugs: ["String"],
 					tags: "[String!]!",
 					type: "String!",
 					url: {
 						type: "String",
 						resolve: (source: PrismicAPIDocumentNode) =>
 							prismicH.asLink(source, scope.pluginOptions.linkResolver),
-					},
+						},
 					[PREVIEWABLE_NODE_ID_FIELD]: {
 						type: "ID!",
 						resolve: (source: PrismicAPIDocumentNode) =>

@@ -7,7 +7,7 @@
 		"test-site"
 	],
 	"scripts": {
-		"build": "npm run build --workspace gatsby-source-prismic --workspace gatsby-plugin-prismic-previews",
+		"build": "npm run build --workspace @zachsz/gatsby-source-prismic",
 		"build:all": "npm run build --workspaces --if-present",
 		"dev": "concurrently \"npm run dev --workspace gatsby-source-prismic\" \"npm run dev --workspace gatsby-plugin-prismic-previews\" --names \"source,previews\" --prefix-colors magenta,blue",
 		"format": "npm run format --workspaces --if-present",

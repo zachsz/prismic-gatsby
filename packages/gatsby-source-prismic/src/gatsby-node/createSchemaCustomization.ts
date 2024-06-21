@@ -271,6 +271,10 @@ export const createSchemaCustomization = async <
 					description:
 						"The type of the selected Prismic document if the field links to a document.",
 				},
+				slugs: {
+					type: "[String]",
+					description: "A list of slugs",
+				},
 				tags: {
 					type: "[String!]",
 					description:

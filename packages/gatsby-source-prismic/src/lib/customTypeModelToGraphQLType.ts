@@ -61,6 +61,10 @@ export const customTypeModelToGraphQLType = (
 				type: "String!",
 				description: "The language of the Prismic document.",
 			},
+			slugs: {
+				type: "[String]",
+				description: "A list of slugs",
+			},
 			tags: {
 				type: "[String!]!",
 				description: "Tags associated with the Prismic document.",
